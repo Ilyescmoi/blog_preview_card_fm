@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px outset black;
+    padding: 24px;
+    gap: 24px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 8px 8px black;
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.date {
+    font-family: 'Figtree', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: hsl(0, 0%, 7%);
+    margin: 0;
+}
+
+.title {
+    font-family: 'Figtree', sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 150%;
+    color: hsl(0, 0%, 7%);
+    margin: 0;
+}
+
+.description {
+    font-family: 'Figtree', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: hsl(0, 0%, 42%);
+    margin: 0;
+}
+
+.content {
+    padding: 0;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.badge {
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bold;
+    width: max-content;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.container:hover .content .title {
+    color: hsl(47, 88%, 63%);
+    transition-duration: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 16px 16px black;
+    transition-duration: 0.3s;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 12px;
+}
+
+.footer img {
+    width: 10%;
+    height: 10%;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 75%;
+    }
+}
